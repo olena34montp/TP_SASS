@@ -1,0 +1,110 @@
+/* Colors */
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+}
+
+.card {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  width: 200px;
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid lightgrey;
+}
+
+#card_1 .card__maj {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: auto;
+  left: auto;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to right, rgba(155, 92, 230, 0.95) 0%, rgb(48, 46, 122) 100%);
+}
+#card_1 .card__min {
+  position: absolute;
+  top: 15%;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(to right, rgba(100, 219, 116, 0.7) 0%, rgba(79, 227, 191, 0.8) 100%);
+}
+#card_2 .card__maj {
+  position: absolute;
+  top: -40px;
+  right: auto;
+  bottom: auto;
+  left: -40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(100, 219, 116, 0.7) 0%, rgba(79, 227, 191, 0.8) 100%);
+  background: radial-gradient(circle, rgba(100, 219, 116, 0.7), rgba(79, 227, 191, 0.8));
+}
+#card_2 .card__min {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  bottom: auto;
+  left: auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(155, 92, 230, 0.95) 0%, rgb(48, 46, 122) 100%);
+  background: radial-gradient(circle, rgba(155, 92, 230, 0.95), rgb(48, 46, 122));
+}
+#card_3 .card__maj {
+  position: absolute;
+  top: -10%;
+  right: -40%;
+  bottom: auto;
+  left: auto;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, rgba(100, 219, 116, 0.7) 0%, rgba(79, 227, 191, 0.8) 100%);
+}
+#card_3 .card__min {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(155, 92, 230, 0.95) 0%, rgb(48, 46, 122) 100%);
+  background: radial-gradient(circle, rgba(155, 92, 230, 0.95), rgb(48, 46, 122));
+}
+#card_4 .card__maj {
+  position: absolute;
+  top: 10%;
+  right: 40%;
+  bottom: auto;
+  left: auto;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, rgba(155, 92, 230, 0.95) 0%, rgb(48, 46, 122) 100%);
+}
+#card_4 .card__min {
+  position: absolute;
+  top: -10%;
+  right: -30%;
+  bottom: auto;
+  left: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(100, 219, 116, 0.7) 0%, rgba(79, 227, 191, 0.8) 100%);
+  background: radial-gradient(circle, rgba(100, 219, 116, 0.7), rgba(79, 227, 191, 0.8));
+}
+
+/*# sourceMappingURL=style.css.map */

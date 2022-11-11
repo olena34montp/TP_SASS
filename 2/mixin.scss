@@ -1,0 +1,34 @@
+@mixin flex ($display, $justify-content, $align-items) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin size ($size-w, $size-h, $radius: false) {
+    width: $size-w;
+    height: $size-h;
+
+    @if $radius != false {
+        border-radius: $radius;
+    }
+}
+
+@mixin position ($position, $top, $right, $bottom, $left){
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin gradient ($circle: false, $primary-color, $secondary-color) {
+    background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
+
+    @if $circle != false{
+        background: radial-gradient($circle, $primary-color, $secondary-color);
+    }
+}
+
+@mixin border ($size, $style, $color) {
+    border: $size $style $color;
+}

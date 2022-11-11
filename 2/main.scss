@@ -1,0 +1,66 @@
+@use "variables";
+@use "mixin";
+
+
+section {
+    @include mixin.flex (flex, space-around, center);
+    width: calc(variables.$size * 10);
+}
+
+.card {
+    @include mixin.position (relative, auto, auto, auto, auto);
+    @include mixin.size (calc(variables.$size * 2), calc(variables.$size * 4), false);
+    overflow: variables.$hidden;
+    @include mixin.border (1px, solid, lightgrey);
+}
+
+#card {
+    &_1 {
+        .card__maj {
+            @include mixin.position (absolute, -20px, -20px, auto, auto);
+            @include mixin.size (calc(variables.$size * 1.5), calc(variables.$size * 1.5), false);
+            @include mixin.gradient (false, variables.$gradient-purple-start-c, variables.$gradient-purple-end-c);
+        }
+        .card__min {
+            @include mixin.position (absolute, 15%, auto, auto, auto);
+            @include mixin.size (calc(variables.$size * .9), calc(variables.$size * .9), false);
+            @include mixin.gradient (false, variables.$gradient-green-start-c, variables.$gradient-green-end-c);
+        }
+    }
+    &_2 {
+        .card__maj {
+            @include mixin.position (absolute, -40px, auto, auto, -40px);
+            @include mixin.size (calc(variables.$size * 2), calc(variables.$size * 2), variables.$radius);
+            @include mixin.gradient (variables.$circle, variables.$gradient-green-start-c, variables.$gradient-green-end-c);
+        }
+        .card__min {
+            @include mixin.position (absolute, -60px, -60px, auto, auto);
+            @include mixin.size (calc(variables.$size * 1.8), calc(variables.$size * 1.8), variables.$radius);
+            @include mixin.gradient (variables.$circle, variables.$gradient-purple-start-c, variables.$gradient-purple-end-c); 
+        }
+    }
+    &_3 {
+        .card__maj {
+            @include mixin.position (absolute, -10%, -40%, auto, auto);
+            @include mixin.size (calc(variables.$size * 2), calc(variables.$size * 2), false);
+            @include mixin.gradient (false, variables.$gradient-green-start-c, variables.$gradient-green-end-c);
+        }
+        .card__min {
+            @include mixin.position (absolute, 30%, 0, auto, auto);
+            @include mixin.size (calc(variables.$size * .7), calc(variables.$size * .7), variables.$radius);
+            @include mixin.gradient (variables.$circle, variables.$gradient-purple-start-c, variables.$gradient-purple-end-c);
+        }
+    }
+    &_4 {
+        .card__maj {
+            @include mixin.position (absolute, 10%, 40%, auto, auto);
+            @include mixin.size (calc(variables.$size * 2), calc(variables.$size * 2), false);
+            @include mixin.gradient (false, variables.$gradient-purple-start-c, variables.$gradient-purple-end-c);
+        }
+        .card__min {
+            @include mixin.position (absolute, -10%, -30%, auto, auto);
+            @include mixin.size (calc(variables.$size * 2), calc(variables.$size * 2), variables.$radius);
+            @include mixin.gradient (variables.$circle, variables.$gradient-green-start-c, variables.$gradient-green-end-c);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@mixin figure ($size, $flag_circle: false) {
+    width: $size;
+    height: $size;
+    
+    @if $flag_circle != false {
+        border-radius: $flag_circle;
+    }
+}
+
+@mixin margin($margin) {
+    margin: $margin;
+}

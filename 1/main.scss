@@ -1,0 +1,17 @@
+@use "variables";
+@use "mixin";
+
+.fig_1, .fig_2, .fig_3, .fig_4 {
+    @include mixin.figure(variables.$size, false);
+    background-color: variables.$primary-color;
+    @include mixin.margin(10px);
+}
+
+.fig_3, .fig_4 {
+    @include mixin.figure(variables.$size, variables.$radius);
+    @include mixin.margin(20px);
+}
+
+.fig_2, .fig_4 {
+    background-color: variables.$secondary-color;
+}
