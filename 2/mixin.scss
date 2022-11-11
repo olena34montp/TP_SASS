@@ -13,8 +13,15 @@
     }
 }
 
-@mixin position ($position, $top, $right, $bottom, $left){
-    position: $position;
+@mixin position ($absolute: false){
+    @if $absolute != false {
+        position: absolute;
+    } @else {
+        position: relative;
+    }
+}
+
+@mixin position-coordinates ($top, $right, $bottom, $left) {
     top: $top;
     right: $right;
     bottom: $bottom;
@@ -22,10 +29,11 @@
 }
 
 @mixin gradient ($circle: false, $primary-color, $secondary-color) {
-    background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
 
     @if $circle != false{
         background: radial-gradient($circle, $primary-color, $secondary-color);
+    } @else {
+        background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
     }
 }
 

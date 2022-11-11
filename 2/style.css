@@ -8,10 +8,6 @@ section {
 
 .card {
   position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
   width: 200px;
   height: 400px;
   overflow: hidden;
@@ -47,7 +43,6 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: linear-gradient(to right, rgba(100, 219, 116, 0.7) 0%, rgba(79, 227, 191, 0.8) 100%);
   background: radial-gradient(circle, rgba(100, 219, 116, 0.7), rgba(79, 227, 191, 0.8));
 }
 #card_2 .card__min {
@@ -59,7 +54,6 @@ section {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background: linear-gradient(to right, rgba(155, 92, 230, 0.95) 0%, rgb(48, 46, 122) 100%);
   background: radial-gradient(circle, rgba(155, 92, 230, 0.95), rgb(48, 46, 122));
 }
 #card_3 .card__maj {
@@ -81,7 +75,6 @@ section {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: linear-gradient(to right, rgba(155, 92, 230, 0.95) 0%, rgb(48, 46, 122) 100%);
   background: radial-gradient(circle, rgba(155, 92, 230, 0.95), rgb(48, 46, 122));
 }
 #card_4 .card__maj {
@@ -103,7 +96,6 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: linear-gradient(to right, rgba(100, 219, 116, 0.7) 0%, rgba(79, 227, 191, 0.8) 100%);
   background: radial-gradient(circle, rgba(100, 219, 116, 0.7), rgba(79, 227, 191, 0.8));
 }
 
